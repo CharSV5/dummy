@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.get('/', function(req, res) {
+  console.log('here')
   res.sendFile('index.html')
 });
 
