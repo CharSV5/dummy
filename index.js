@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-mongoose.connect('mongodb:/localhost:27017/dummyDB', function (err) {
+mongoose.connect('mongodb://makersacademy:123456@ds125469.mlab.com:25469/makersacademy', function(err) {
 
-  if (err) throw err; 
+  if (err) throw err;
 
   console.log('Succesfully connected')
 });
@@ -19,7 +19,9 @@ var dummyModel = mongoose.model('name', dummySchema);
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
 
 app.get('/', function(req, res) {
   res.sendFile('index.html')
