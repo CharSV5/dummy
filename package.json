@@ -1,0 +1,10 @@
+{
+  "name": "dummy",
+  "version": "1.0.0",
+  "description": "front end/back end talking",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
