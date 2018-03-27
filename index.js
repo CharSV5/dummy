@@ -27,6 +27,14 @@ app.get('/', function(req, res) {
   res.sendFile('index.html')
 });
 
+app.get('/getdata', function(req, res) {
+  console.log('you have clicked the button to get data')
+  dummyModel.find()
+    .then(function(alldocs) {
+      res.send(JSON.stringify(alldocs))
+    })
+})
+
 app.post('/', function(req, res) {
   var student = {
     firstName: req.body.firstName,
