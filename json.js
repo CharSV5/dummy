@@ -27,7 +27,7 @@ const accomodations = [
       'url'
     ]
     price: 10,
-    unavailabe: [
+    bookings: [
       {
         start: '10th Feb'
         end: '12th Feb'
@@ -50,7 +50,7 @@ const accomodations = [
       'url',
       'url'
     ]
-    unavailabe: [
+    bookings: [
       {
         start: '1st March'
         end: '12th March'
@@ -75,7 +75,7 @@ const accomodations = [
       'url',
       'url'
     ]
-    unavailabe: [
+    bookings: [
       {
         start: '1st March'
         end: '12th March'
