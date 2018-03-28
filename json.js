@@ -22,6 +22,10 @@ const accomodations = [
     address: "25 aldgate",
     description: "great place",
     numberOfRooms: 4,
+    images: [
+      'url',
+      'url'
+    ]
     price: 10,
     unavailabe: [
       {
@@ -42,6 +46,10 @@ const accomodations = [
     description: "shit place",
     price: 10,
     numberOfRooms: 5,
+    images: [
+      'url',
+      'url'
+    ]
     unavailabe: [
       {
         start: '1st March'
@@ -61,6 +69,12 @@ const accomodations = [
     description: "crib",
     price: 10,
     numberOfRooms: 5,
+    images: [
+      'url',
+      'url',
+      'url',
+      'url'
+    ]
     unavailabe: [
       {
         start: '1st March'
