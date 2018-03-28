@@ -18,14 +18,26 @@ const accomodations = [
     id: 1,
     hostId: 1,
     hostName: "theRealSlimRicky",
-    name: "myHouseInTheMiddleOfOurStreet",
-    address: "25 aldgate",
+    house: "myhouse"
+    street: "big street",
+    city: "Southend"
     description: "great place",
-    numberOfRooms: 4,
+    bedrooms: 5,
+    bathrooms: 2,
+    reviews: [
+      {
+        rating: 4
+        text: 'I liked it'
+      },
+      {
+        rating: 4
+        text: 'I liked it'
+      }
+    ],
     images: [
       'url',
       'url'
-    ]
+    ],
     price: 10,
     bookings: [
       {
@@ -42,39 +54,28 @@ const accomodations = [
     id: 2,
     hostId: 1,
     hostName: "theRealSlimRicky",
-    address: "26 aldgate",
+    house: "myhouse",
+    street: "terrible street",
+    city: "Southhampton",
     description: "shit place",
     price: 10,
     numberOfRooms: 5,
-    images: [
-      'url',
-      'url'
-    ]
-    bookings: [
+    bedrooms: 3,
+    bathrooms: 2,
+    reviews: [
       {
-        start: '1st March'
-        end: '12th March'
+        rating: 2
+        text: 'unclean'
       },
       {
-        start: '18th March'
-        end: '21st March'
+        rating: 2
+        text: 'bad'
       }
-    ]
-  },
-  {
-    id: 3,
-    hostId: 2,
-    hostName: "Alfie",
-    address: "44 Bethanal Green",
-    description: "crib",
-    price: 10,
-    numberOfRooms: 5,
+    ],
     images: [
       'url',
-      'url',
-      'url',
       'url'
-    ]
+    ],
     bookings: [
       {
         start: '1st March'
